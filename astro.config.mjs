@@ -7,8 +7,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://astro-prefetch-test.netlify.app',
 	// prefetch: true,
-	prefetch: {
-    prefetchAll: true
-  },
+	trailingSlash: 'never',
+	prefetch: true,
 	integrations: [mdx(), sitemap()],
 });
